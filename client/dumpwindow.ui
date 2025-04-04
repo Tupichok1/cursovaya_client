@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dumpWindow</class>
+ <widget class="QDialog" name="dumpWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>684</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+  background-color: #fff;
+}
+QPushButton {
+    border: 2px solid gray;
+    border-radius: 6px;
+    min-width: 80px;
+	font: 13pt &quot;Liberation Serif&quot;;
+	color: black;
+	background-color: white
+}
+QPushButton:pressed {
+    border: 2px solid blue;
+}
+QComboBox {
+    border: 2px solid gray;
+    border-radius: 6px;
+    min-width: 80px;
+	font: 13pt &quot;Liberation Serif&quot;;
+	color: black;
+	background-color: white;
+}
+QLineEdit {
+	color: black;
+	background-color: #ddd;
+ 	border-radius: 8px;
+ 	border: 1px solid #e0e4e7;
+	padding: 5px 15px;
+}
+QTableWidget {
+	color: black;
+}
+QLabel {
+	color: black;
+	font: 11pt &quot;DejaVu Math TeX Gyre&quot;;
+}
+QMenu {
+	color: black;
+	border: 2px solid gray;
+	border-radius: 12px 12px 0px 0px;
+    min-width: 80px;
+}
+QMenuBar {
+	color: black;
+	border: 2px solid gray;
+    min-width: 80px;
+}</string>
+  </property>
+  <widget class="QTableWidget" name="dumpTable">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>361</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: black;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="recoverButton">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>140</y>
+     <width>241</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Сделать откат БД</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="dumpButton">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>385</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Сохранить действующую БД</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="numberOfDump">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>85</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="recoverStatus">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>40</y>
+     <width>241</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

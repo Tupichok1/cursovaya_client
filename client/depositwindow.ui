@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>depositWindow</class>
+ <widget class="QDialog" name="depositWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>556</width>
+    <height>532</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+  background-color: #fff;
+}
+QPushButton {
+    border: 2px solid gray;
+    border-radius: 6px;
+    min-width: 80px;
+	font: 13pt &quot;Liberation Serif&quot;;
+	color: black;
+	background-color: white
+}
+QPushButton:pressed {
+    border: 2px solid blue;
+}
+QComboBox {
+    border: 2px solid gray;
+    border-radius: 6px;
+    min-width: 80px;
+	font: 13pt &quot;Liberation Serif&quot;;
+	color: black;
+	background-color: white;
+}
+QLineEdit {
+	color: black;
+	background-color: #ddd;
+ 	border-radius: 8px;
+ 	border: 1px solid #e0e4e7;
+	padding: 5px 15px;
+}</string>
+  </property>
+  <widget class="QLabel" name="settingsOfDeposit">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: black;
+font: 400 13pt &quot;Cantarell&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Настроить вклад</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="makeOrder">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>440</y>
+     <width>151</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Оставить заявку</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="goBack">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>440</y>
+     <width>131</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Вернуться в ЛК</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="resultOfOrder">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>380</y>
+     <width>451</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: black;
+font: 400 13pt &quot;Cantarell&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chooseRubles">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>87</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border: 2px solid gray;
+    border-radius: 6px;
+    min-width: 80px;
+	font: 13pt &quot;Liberation Serif&quot;;
+	color: black;
+	background-color: white
+}
+
+QPushButton:pressed {
+    border: 2px solid blue;
+}</string>
+   </property>
+   <property name="text">
+    <string>В рублях</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chooseYuan">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>60</y>
+     <width>87</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border: 2px solid gray;
+    border-radius: 6px;
+    min-width: 80px;
+	font: 13pt &quot;Liberation Serif&quot;;
+	color: black;
+	background-color: white
+}
+
+QPushButton:pressed {
+    border: 2px solid blue;
+}</string>
+   </property>
+   <property name="text">
+    <string>В юанях</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chooseThreeMonth">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>110</y>
+     <width>87</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3 мес</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chooseSixMonth">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>110</y>
+     <width>87</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>6 мес</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chooseTwelveMonth">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>110</y>
+     <width>87</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>12 мес</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="chooseOtherMonth">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>110</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListView {
+	color: black;
+	background-color: white;
+ 	border: 2px solid gray;
+    border-radius: 6px;
+    min-width: 80px;
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Другой срок</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2 месяца</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>4 месяца</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>5 месяцев</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="enterAmount">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>180</y>
+     <width>451</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>250</y>
+     <width>451</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListView {
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    min-width: 80px;
+	font: 13pt &quot;Liberation Serif&quot;;
+	color: black;
+	background-color: #ddd
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelOfFinalAmount">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>260</y>
+     <width>171</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font: 700 11pt &quot;Cantarell&quot;;
+	color: black;
+	background-color: #ddd
+}</string>
+   </property>
+   <property name="text">
+    <string>Сумма в конце срока:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelExchange">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>320</y>
+     <width>66</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font: 13pt &quot;Liberation Serif&quot;;
+	color: gray;
+	background-color: #ddd
+}</string>
+   </property>
+   <property name="text">
+    <string>Валюта</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="exchange">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>290</y>
+     <width>66</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font: 13pt &quot;Liberation Serif&quot;;
+	color: black;
+	background-color: #ddd
+}</string>
+   </property>
+   <property name="text">
+    <string>Рубли</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelDuration">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>320</y>
+     <width>66</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font: 13pt &quot;Liberation Serif&quot;;
+	color: gray;
+	background-color: #ddd
+}</string>
+   </property>
+   <property name="text">
+    <string>Срок</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelOfPercent">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>320</y>
+     <width>66</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font: 13pt &quot;Liberation Serif&quot;;
+	color: gray;
+	background-color: #ddd
+}</string>
+   </property>
+   <property name="text">
+    <string>Ставка</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="duration">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>290</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font: 13pt &quot;Liberation Serif&quot;;
+	color: black;
+	background-color: #ddd
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="percent">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>290</y>
+     <width>66</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font: 13pt &quot;Liberation Serif&quot;;
+	color: black;
+	background-color: #ddd
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="finalAmount">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>260</y>
+     <width>181</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font: 13pt &quot;Liberation Serif&quot;;
+	color: black;
+	background-color: #ddd
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

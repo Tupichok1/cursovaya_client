@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>userWindow</class>
+ <widget class="QMainWindow" name="userWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>615</width>
+    <height>530</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+  background-color: #fff;
+}
+QPushButton {
+    border: 2px solid gray;
+    border-radius: 6px;
+    min-width: 80px;
+	font: 13pt &quot;Liberation Serif&quot;;
+	color: black;
+	background-color: white
+}
+QPushButton:pressed {
+    border: 2px solid blue;
+}
+QComboBox {
+    border: 2px solid gray;
+    border-radius: 6px;
+    min-width: 80px;
+	font: 13pt &quot;Liberation Serif&quot;;
+	color: black;
+	background-color: white;
+}
+QLineEdit {
+	color: black;
+	background-color: #ddd;
+ 	border-radius: 8px;
+ 	border: 1px solid #e0e4e7;
+	padding: 5px 15px;
+}
+QTableWidget {
+	color: black;
+}
+QLabel {
+	color: black;
+	font: 11pt &quot;DejaVu Math TeX Gyre&quot;;
+}
+QMenu {
+	color: black;
+	border: 2px solid gray;
+	border-radius: 12px 12px 0px 0px;
+    min-width: 80px;
+}
+QMenuBar {
+	color: black;
+	border: 2px solid gray;
+    min-width: 80px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="makeOrder">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>360</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Открыть вклад</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>591</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: black;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="makeSave">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>360</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Экспорт таблицы</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="closeDeposit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>410</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Закрыть вклад</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="depositForClose">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>410</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="status">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>470</y>
+      <width>311</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>271</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 450 13pt &quot;Fira Code&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Ваши открытые вклады</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="exitFromAccount">
+   <property name="text">
+    <string>Выйти из аккаунта</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

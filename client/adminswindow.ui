@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>adminsWindow</class>
+ <widget class="QDialog" name="adminsWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+  background-color: #fff;
+}
+QPushButton {
+    border: 2px solid gray;
+    border-radius: 6px;
+    min-width: 80px;
+	font: 13pt &quot;Liberation Serif&quot;;
+	color: black;
+	background-color: white
+}
+QPushButton:pressed {
+    border: 2px solid blue;
+}
+QComboBox {
+    border: 2px solid gray;
+    border-radius: 6px;
+    min-width: 80px;
+	font: 13pt &quot;Liberation Serif&quot;;
+	color: black;
+	background-color: white;
+}
+QLineEdit {
+	color: black;
+	background-color: #ddd;
+ 	border-radius: 8px;
+ 	border: 1px solid #e0e4e7;
+	padding: 5px 15px;
+}
+QTableWidget {
+	color: black;
+}
+QLabel {
+	color: black;
+	font: 11pt &quot;DejaVu Math TeX Gyre&quot;;
+}
+QMenu {
+	color: black;
+	border: 2px solid gray;
+	border-radius: 12px 12px 0px 0px;
+    min-width: 80px;
+}
+QMenuBar {
+	color: black;
+	border: 2px solid gray;
+    min-width: 80px;
+}</string>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <widget class="QPushButton" name="ordersButton">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>200</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Работа с заявками</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="dumpButton">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>130</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Работа с копиями БД</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SQLButton">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>60</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Написание SQl-запросов</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
